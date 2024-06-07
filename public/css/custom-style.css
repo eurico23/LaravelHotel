@@ -1,0 +1,19 @@
+
+.position-relative {
+	position:relative;
+}
+
+.price {
+	transform: translateY(-15px);
+	top:100%;
+	position:absolute;
+	background-color: #FEA116;
+	color:#fff;
+    margin-left: 10px;
+    padding: 4px 6px;
+}
+
+
+.price p {
+	color:#fff;
+}
