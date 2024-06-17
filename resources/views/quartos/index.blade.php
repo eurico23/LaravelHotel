@@ -22,7 +22,7 @@
                         <div class="p-2 bd-highlight">{{ $quarto->numero_pessoas_no_quarto }}+ <i class="fa fa-user" aria-hidden="true"></i></div>
                     </div>
                     <p class="card-text">{{ $quarto->descricao_do_quarto }}</p>
-                    <a href="{{ url('show/' . $quarto->id) }}" class="btn btn-primary">Ver</a>
+                    <a href="{{ url('quarto-' . $quarto->id) }}" class="btn btn-primary">Ver</a>
                     <a href="#" class="btn btn-primary">Reserva</a>
                 </div>
             </div>

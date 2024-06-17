@@ -127,7 +127,7 @@
 							
 											<li><a href="#">Principal <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="/quartos">Menu Principal</a></li>
+													<li><a href="/quartos">Quartos</a></li>
 												</ul>
 											</li>
 											<li><a href="#">serviços<i class="icofont-rounded-down"></i></a>
@@ -256,7 +256,8 @@
 			<!--/ End Copyright -->
 		</footer>
 		<!--/ End Footer Area -->
-		
+
+
 		<!-- jquery Min JS -->
         <script src="{{ URL::asset('js/jquery.min.js') }} "></script>
 		<!-- jquery Migrate JS -->
@@ -297,5 +298,30 @@
 		<script src="{{ URL::asset('js/bootstrap.min.js') }} "></script>
 		<!-- Main JS -->
 		<script src="{{ URL::asset('js/main.js') }} "></script>
+
+	<!--calendar date upward -->
+	<script type="text/javascript"> 
+		$(function(){
+			var dtToday = new Date();
+		
+			var month = dtToday.getMonth() + 1;
+
+			var day = dtToday.getDate();
+
+			var year = dtToday.getFullYear();
+
+			if(month < 10)
+				month = '0' + month.toString();
+
+			if(day < 10)
+			day = '0' + day.toString();
+
+			var maxDate = year + '-' + month + '-' + day;
+			$('#data_entrada').attr('min', maxDate);
+			$('#data_saida').attr('min', maxDate);
+
+		});
+	</script>
+
     </body>
 </html>

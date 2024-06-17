@@ -10,43 +10,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<!-- Title -->
-        <title>Hotel Pirâmide</title>
+        <title>@yield('title')</title>
 		
 		<!-- Favicon -->
         <link rel="icon" href="img/favicon.png">
 
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }} ">
+		<!--link rel="stylesheet" href="css/style.css"-->
+
 		<!-- Nice Select CSS -->
-		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="{{ URL::asset('css/nice-select.css') }} ">
 		<!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }} ">
 		<!-- icofont CSS -->
-        <link rel="stylesheet" href="css/icofont.css">
+        <link rel="stylesheet" href="{{ URL::asset('css/icofont.css') }} ">
 		<!-- Slicknav -->
-		<link rel="stylesheet" href="css/slicknav.min.css">
+		<link rel="stylesheet" href="{{ URL::asset('css/slicknav.min.css') }} ">
 		<!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="{{ URL::asset('css/owl-carousel.css') }} ">
 		<!-- Datepicker CSS -->
-		<link rel="stylesheet" href="css/datepicker.css">
+		<link rel="stylesheet" href="{{ URL::asset('css/datepicker.css') }} ">
 		<!-- Animate CSS -->
-        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="{{ URL::asset('css/animate.min.css') }} ">
 		<!-- Magnific Popup CSS -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="{{ URL::asset('css/magnific-popup.css') }} ">
 		
 		<!-- Medipro CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }} ">
+        <link rel="stylesheet" href="{{ URL::asset('style.css') }}">
+        <link rel="stylesheet" href="{{ URL::asset('css/responsive.css') }} ">
+        <link rel="stylesheet" href="{{ URL::asset('css/custom-style.css') }} ">
 		
     </head>
     <body>
-	
-		<!-- Preloader -->
-        <div class="preloader">
+			<!-- Preloader -->
+            <div class="preloader">
             <div class="loader">
                 <div class="loader-outter"></div>
                 <div class="loader-inner"></div>
@@ -153,159 +156,21 @@
 			<!-- End Header Inner -->
 		</header>
 		<!-- End Header Area -->
-		
-		<!-- Slider Area -->
-		<section class="slider">
-			<div class="hero-slider">
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider2.jpg')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>Explore o Conforto com Nossos Serviços <span>Hoteleiros</span> de <span>Confiança!</span></h1>
-									<p>"Transforme sua estadia em uma experiência única de conforto e sofisticação. Reserve agora e permita-nos superar suas expectativas com serviços de excelência e acomodações impecáveis." </p>
-									<div class="button">
-										<a href="#" class="btn">Marcar Reserva</a>
-									<!--	<a href="#" class="btn primary">Learn More</a> -->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
 
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider.jpg')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-								<h1>Explore o Conforto com Nossos Serviços <span>Hoteleiros</span> de <span>Confiança!</span></h1>
-									<p>"Transforme sua estadia em uma experiência única de conforto e sofisticação. Reserve agora e permita-nos superar suas expectativas com serviços de excelência e acomodações impecáveis.". </p>
-									<div class="button">
-										<a href="#" class="btn">Marcar Reserva</a>
-										<!--<a href="#" class="btn primary">About Us</a>-->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Start End Slider -->
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url('img/slider3.jpg')">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-								<h1>Explore o Conforto com Nossos Serviços <span>Hoteleiros</span> de <span>Confiança!</span></h1>
-									<p>"Transforme sua estadia em uma experiência única de conforto e sofisticação. Reserve agora e permita-nos superar suas expectativas com serviços de excelência e acomodações impecáveis.". </p>
-									<div class="button">
-										<a href="#" class="btn">Marcar Reserva</a>
-										<!--<a href="#" class="btn primary">Conatct Now</a>-->
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
-			</div>
-		</section>
-		<!--/ End Slider Area -->
-		
-		<!-- Start Schedule Area -->
-		<section class="schedule">
-			<div class="container">
-				<div class="schedule-inner">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-12 ">
-							<!-- single-schedule -->
-							<div class="single-schedule first">
-								<div class="inner">
-									<div class="icon">
-										<i class="fa fa-shield"></i>
-									</div>
-									<div class="single-content">
-										<span>Hotel</span>
-										<h4>Segurança</h4>
-										<p>Segurança e conforto se encontram para uma experiência excepcional centrada na sua tranquilidade.</p>
-										<a href="#">SABER MAIS<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12">
-							<!-- single-schedule -->
-							<div class="single-schedule middle">
-								<div class="inner">
-									<div class="icon">
-										<i class="fa fa-cutlery"></i>
-									</div>
-									<div class="single-content">
-										<span>Hóspedes</span>
-										<h4>Alimentação | Bebidas</h4>
-										<p>Desfrute de um café da manhã no quarto, relaxe em nosso bar acolhedor, satisfaça seus desejos.</p>
-										<a href="#">SABER MAIS<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-12 col-12">
-							<!-- single-schedule -->
-							<div class="single-schedule last">
-								<div class="inner">
-									<div class="icon">
-										<i class="icofont-ui-clock"></i>
-									</div>
-									<div class="single-content">
-										<span>Funcionários</span>
-										<h4>Horário  Atendimento</h4>
-										<ul class="time-sidual">
-											<li class="day">Segunda  até Domingo <span>24/24</span></li>
-											<li class="day">Domingo  até Segunda <span>24/24</span></li>
-											<li class="day">Aberto todos os dias <span>24/24</span></li>
-										</ul>
-										<a href="#">SABER MAIS<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--/End Start schedule Area -->
 
-		<!-- Start Feautes -->
-		<section class="Feautes section">
+
+        <section class="Feautes section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Prontos para Tornar sua Estadia Memorável</h2>
-							<img src="img/section-img.png" alt="#">
-							<p>A satisfação do cliente é nossa Alegria, adaptamo-nos às suas necessidades atuais com preços competitivos</p>
-						</div>
+                            @yield('content')
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-4 col-12">
-		<!-- Start Single features -->
-						
-		<!--/ End Fun-facts -->
-		
-		
-		 <!--End Appointment -->
-
-				</div>
-			</div>
-		</div>
+		    </div>
 		</section>
 		<!-- /End Newsletter Area -->
-		
+
+
 		<!-- Footer Area -->
 		<footer id="footer" class="footer ">
 			<!-- Footer Top -->
@@ -390,48 +255,48 @@
 			</div>
 			<!--/ End Copyright -->
 		</footer>
-		@include('components.flash-message')
 		<!--/ End Footer Area -->
-		
+		@include('components.flash-message')
+
 		<!-- jquery Min JS -->
-        <script src="js/jquery.min.js"></script>
+        <script src="{{ URL::asset('js/jquery.min.js') }} "></script>
 		<!-- jquery Migrate JS -->
-		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<script src="{{ URL::asset('js/jquery-migrate-3.0.0.js') }} "></script>
 		<!-- jquery Ui JS -->
-		<script src="js/jquery-ui.min.js"></script>
+		<script src="{{ URL::asset('js/jquery-ui.min.js') }} "></script>
 		<!-- Easing JS -->
-        <script src="js/easing.js"></script>
+        <script src="{{ URL::asset('js/easing.js') }} "></script>
 		<!-- Color JS -->
-		<script src="js/colors.js"></script>
+		<script src="{{ URL::asset('js/colors.js') }} "></script>
 		<!-- Popper JS -->
-		<script src="js/popper.min.js"></script>
+		<script src="{{ URL::asset('js/popper.min.js') }} "></script>
 		<!-- Bootstrap Datepicker JS -->
-		<script src="js/bootstrap-datepicker.js"></script>
+		<script src="{{ URL::asset('js/bootstrap-datepicker.js') }} "></script>
 		<!-- Jquery Nav JS -->
-        <script src="js/jquery.nav.js"></script>
+        <script src="{{ URL::asset('js/jquery.nav.js') }} "></script>
 		<!-- Slicknav JS -->
-		<script src="js/slicknav.min.js"></script>
+		<script src="{{ URL::asset('js/slicknav.min.js') }} "></script>
 		<!-- ScrollUp JS -->
-        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="{{ URL::asset('js/jquery.scrollUp.min.js') }} "></script>
 		<!-- Niceselect JS -->
-		<script src="js/niceselect.js"></script>
+		<script src="{{ URL::asset('js/niceselect.js') }} "></script>
 		<!-- Tilt Jquery JS -->
-		<script src="js/tilt.jquery.min.js"></script>
+		<script src="{{ URL::asset('js/tilt.jquery.min.js') }} "></script>
 		<!-- Owl Carousel JS -->
-        <script src="js/owl-carousel.js"></script>
+        <script src="{{ URL::asset('js/owl-carousel.js') }} "></script>
 		<!-- counterup JS -->
-		<script src="js/jquery.counterup.min.js"></script>
+		<script src="{{ URL::asset('js/jquery.counterup.min.js') }} "></script>
 		<!-- Steller JS -->
-		<script src="js/steller.js"></script>
+		<script src="{{ URL::asset('js/steller.js') }} "></script>
 		<!-- Wow JS -->
-		<script src="js/wow.min.js"></script>
+		<script src="{{ URL::asset('js/wow.min.js') }} "></script>
 		<!-- Magnific Popup JS -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="{{ URL::asset('js/jquery.magnific-popup.min.js') }} "></script>
 		<!-- Counter Up CDN JS -->
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 		<!-- Bootstrap JS -->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="{{ URL::asset('js/bootstrap.min.js') }} "></script>
 		<!-- Main JS -->
-		<script src="js/main.js"></script>
+		<script src="{{ URL::asset('js/main.js') }} "></script>
     </body>
 </html>

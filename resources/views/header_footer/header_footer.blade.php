@@ -390,6 +390,7 @@
 			</div>
 			<!--/ End Copyright -->
 		</footer>
+		@include('components.flash-message')
 		<!--/ End Footer Area -->
 		
 		<!-- jquery Min JS -->

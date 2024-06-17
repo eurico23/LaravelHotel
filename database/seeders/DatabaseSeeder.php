@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-         Quartos::factory(3)->create();
+         Quartos::factory(6)->create();
 
        /* Quartos::create([
         'nome_do_quarto' => 'Lounge',
